@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Sales Dashboard</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: darkblue;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: darkblue;
+            color: white;
+        }
+
+        .summary{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .box{
+            background-color: orange;
+            color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Business Sales Performance Analytics 2023-2024</h1>
+
+<div class="summary">
+
+    <div class="box">
+        <h2>Total Revenue</h2>
+        <p>₹32,50,000</p>
+    </div>
+
+    <div class="box">
+        <h2>Total Profit</h2>
+        <p>₹6,40,000</p>
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Monthly Revenue Trend</h2>
+        <img src="trend.png" width="100%">
+    </div>
+
+    <div class="card">
+        <h2>Top Products by Revenue</h2>
+
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Revenue</th>
+            </tr>
+
+            <tr>
+                <td>Laptop Pro</td>
+                <td>₹439K</td>
+            </tr>
+
+            <tr>
+                <td>4K Monitor</td>
+                <td>₹421K</td>
+            </tr>
+
+            <tr>
+                <td>Tablet X</td>
+                <td>₹397K</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="card">
+        <h2>Regional Revenue Share</h2>
+        <ul>
+            <li>East - 27%</li>
+            <li>North - 29.1%</li>
+            <li>South - 24%</li>
+            <li>West - 19.9%</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Revenue by Category</h2>
+
+        <table>
+
+            <tr>
+                <th>Category</th>
+                <th>Revenue</th>
+            </tr>
+
+            <tr>
+                <td>Electronics</td>
+                <td>₹20,00,000</td>
+            </tr>
+
+            <tr>
+                <td>Furniture</td>
+                <td>₹8,50,000</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>
